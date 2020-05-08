@@ -1,0 +1,5 @@
+learn:
+  api-package: com.avrilko.learn.api
+spring:
+  profiles:
+    active: dev
