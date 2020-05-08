@@ -16,8 +16,8 @@ public class PersonDTO {
     private String name;
     private Integer age;
 
-    @Valid
-    private SchoolDTO schoolDTO;
+//    @Valid
+//    private SchoolDTO schoolDTO;
 
     private String password1;
     private String password2;

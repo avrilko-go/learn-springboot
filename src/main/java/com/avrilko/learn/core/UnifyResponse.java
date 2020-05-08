@@ -1,25 +1,15 @@
 package com.avrilko.learn.core;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Getter
+@Setter
 public class UnifyResponse {
     private int code;
     private String message;
     private String request;
-
-    public int getCode() {
-        return code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public String getRequest() {
-        return request;
-    }
-
-    public UnifyResponse(int code, String message, String request) {
-        this.code = code;
-        this.message = message;
-        this.request = request;
-    }
 }

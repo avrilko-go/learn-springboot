@@ -15,9 +15,7 @@ import org.springframework.web.client.HttpClientErrorException;
 @RequestMapping("/banner")
 public class BannerController {
     @PostMapping("/test/{id}")
-    public String test(@PathVariable @Range(min = 1,max = 10,message = "hahhahah1") Integer id, @RequestParam String name, @RequestBody @Validated PersonDTO personDTO) {
-        System.out.println(id);
-        System.out.println(name);
-        throw new ForbiddenException(10001);
+    public PersonDTO test(@PathVariable @Range(min = 1,max = 10,message = "hahhahah1") Integer id, @RequestBody @Validated PersonDTO personDTO) {
+        return personDTO;
     }
 }
